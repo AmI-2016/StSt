@@ -24,7 +24,6 @@
             </h1>
           <h2 id="project_tagline">
             <a href="index.html">Home page</a>
-            </h2>
             <!--section id="downloads">
               <a class="zip_download_link" href="https://github.com/AmI-2016/StSt/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/AmI-2016/StSt/tarball/master">Download this project as a tar.gz file</a>
@@ -36,148 +35,59 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h2>
-<a id="group-members" class="anchor" href="#group-members" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Group Members</h2>
-
-<table>
-<thead>
-<tr>
-<th>ID (matricola)</th>
-<th>Last Name</th>
-<th>First Name</th>
-<th>e-mail</th>
-<th>GitHub</th>
-<th>Role in the Project</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>S212727</td>
-<td>Borraccini</td>
-<td>Giacomo</td>
-<td><a href="mailto:s212727@studenti.polito.it">s212727@studenti.polito.it</a></td>
-<td><a href="https://github.com/gborrach" class="user-mention">@gborrach</a></td>
-<td>Project designer &amp; hw developer</td>
-<td><img src="images/jack.jpg" class="img-circle" heigth="100" width="100"></td>
-</tr>
-<tr>
-<td>S201055</td>
-<td>Ciravegna</td>
-<td>Gabriele</td>
-<td><a href="mailto:s201055@studenti.polito.it">s201055@studenti.polito.it</a></td>
-<td><a href="https://github.com/S201055" class="user-mention">@S201055</a></td>
-<td>Software and website programmer</td>
-<td><img src="images/gabri.jpg" class="img-circle" heigth="100" width="100"></td>
-</tr>
-<tr>
-<td>S205191</td>
-<td>Cofano</td>
-<td>Fabio</td>
-<td><a href="mailto:s205191@studenti.polito.it">s205191@studenti.polito.it</a></td>
-<td><a href="https://github.com/S205191" class="user-mention">@S205191</a></td>
-<td>Hw designer &amp; sensor interfacing</td>
-<td><img src="images/fabio.jpg" class="img-circle" heigth="100" width="100"></td>
-</tr>
-<tr>
-<td>S203625</td>
-<td>Coluccio</td>
-<td>Andrea</td>
-<td><a href="mailto:s203625@studenti.polito.it">s203625@studenti.polito.it</a></td>
-<td><a href="https://github.com/S203625" class="user-mention">@S203625</a></td>
-<td>Hw designer &amp; sensor interfacing</td>
-<td><img src="images/colu.jpg" class="img-circle" heigth="100" width="100"></td>
-</tr>
-</tbody>
-</table>
 
 <h2>
-<a id="vision" class="anchor" href="#vision" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Vision</h2>
+<a id="Purpose and Scope" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Defnitions</h2>
 
-<p>Study Station is a system thought as a wearable device that avoid health issues caused by wrong postures. The benefit is to leave the body relaxed even after long periods of sitting. The users interested could be all those people who spend a lot of time sitting. Students are supposed to stay  a lot of time on desks during class lectures; a wrong posture may cause backache and also body injury if maintained over time. Our system may prevent it. People who already have those kind of habits and problems may get a useful help from the use of our device!  </p>
+<p>The aim of the project is to improve the workstation within devices which correct wrong posture of the body when the user is working on his terminal, and they also give the possibility to regulate the correct study room’s brightness.</p>
 
-<p>The device helps  to prevent and correct the wrong posture through signals used to warn users as, for example, a vibration from the device itself or a displayed message on the personal computer and smartphones. Furthermore, it gives some suggestions to modify their own workstation. It collects some statistics through sensors placed on some specific and critic points of the body (for example neck, shoulders, lumbar spine) during the session. These statistics are available on the phone app or on the website.</p>
-
-<h2>
-<a id="ami-main-steps" class="anchor" href="#ami-main-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AmI Main Steps</h2>
-
-<table border="1" style="width:100%">
-<thead>
-<tr>
-<th>AmI Step</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sensing</td>
-<td>Through some sensors our ambient understand the posture of the user.</td>
-</tr>
-<tr>
-<td>Reasoning</td>
-<td>The calculation of the difference between the actual posture and the correct one.</td>
-</tr>
-<tr>
-<td>Acting</td>
-<td>A signal as a vibration and/or a light advises the user of the wrong posture.</td>
-</tr>
-<tr>
-<td>Interacting</td>
-<td>First the user may start the analysis when it's not active yet. Eventually the user can review the data collected by the ambient during the day, month, year.</td>
-</tr>
-</tbody>
-</table>
+<p>The system has the following parts: a wearable device (composed by a set of tilt sensors that give informations about posture), a camera (which measures the distance between user and his PC), a light-sensor (that controls the environment brightness and computes some operations to fix it to avoid sight tiredness) and a Software (used as a Control Unit of the entire structure that shows all the data and suggests user to improve his working station through displayed messages). The PC is used to collect and show statistics.  </p>
 
 <h2>
-<a id="ami-features" class="anchor" href="#ami-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AmI Features</h2>
-
-<table>
-<thead>
-<tr>
-<th>AmI feature</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sensitive</td>
-<td>The system is able to recognize a wrong posture.</td>
-</tr>
-<tr>
-<td>Responsive</td>
-<td>It's able to alert the user.</td>
-</tr>
-<tr>
-<td>Adaptive</td>
-<td>The system is able to adapt itself to every kind of body and it will start only when needed.</td>
-</tr>
-<tr>
-<td>Transparent</td>
-<td>Only when the user need help the device intervenes. Otherwise neither him neither other people notice it.</td>
-</tr>
-<tr>
-<td>Ubiquitous</td>
-<td>The system is based on a wearable device. You can bring it wherever you need it.</td>
-</tr>
-<tr>
-<td>Intelligent</td>
-<td>It's able to elaborate data and to understand when alert users.</td>
-</tr>
-</tbody>
-</table>
+<a id="Definitions" class="anchor" href="#Definitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Glossary</h2>
+<h3>Glossary</h3>
+<li>Location: home or office</li>
+<li>Stimuli: the set of audio/message/vibration signals that are supposed to send data about user’s posture</li>
+<h3>Actors</h3>
+<li>The project is intended to all users that are approaching to study or work on their own workstation, at home, in office…</li>
 
 <h2>
-<a id="open-issue" class="anchor" href="#open-issue" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Open Issue</h2>
-
+<a id="Functional-Requirements" class="anchor" href="#functional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Functional Requirements</h2>
 <ol>
-<li>How to understand whether the user is sitting or not.</li>
-<li>What's the best posture?</li>
-<li>How to fit the device inside the clothes?</li>
-<li>There may be some problem with very fat people. </li>
-<li>We will need some tilt sensors (gyroscopes)</li>
+<li>
+  Log.1 - create an account. Priority: 3
+  Creating an Account gives the possibility to the user to see statistics on the web page about the position and suggestions to change his habits in a better way. Account is personal, which means that each account has different data related to the user.
+</li>
+<li>
+  Log.2 - Synchronization between program and web. Priority: 3
+  The synchronization starts through a signal (Wi-fi or Bluetooth) sent by the user’s PC. Every time the user logs in the web page, the program used to start the device sends data to the webpage. The device must be recognized by the program when active.
+</li>
+<li>
+  WEB - Data visualization. Priority: 3
+  The webpage offers to users to see all the data sent by sensors. The webpage may be composed by graphs (at first the report could be a list of data) which show all the statistics about position and environment illumination since service is started. Data are used also to display advices to improve the workstation.
+</li>
+<li>
+  NOTIFS - Notifications. Priority: 2
+  A program on PC will communicate with the device. It offers the possibility to switch on StSt and report in real time every information sent by sensors. The program also communicates with the website and send data to it to build a personal “history” and to show possible improvements.
+</li>
+<li>
+  ACTING - Interacting with the user and the environment. Priority: 1
+  A program on PC will communicate with the device. It offers the possibility to switch on StSt and report in real time every information sent by sensors. The program also communicates with the website and send data to it to build a personal “history” and to show possible improvements.
+</li>
 </ol>
-      </section>
-    </div>
-
+<h2>
+<a id="Non-Funcitional-Requirements" class="anchor" href="#non-functional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Non Functional Requirements</h2>
+<ol>
+  <li>
+    1 - Using Camera. Area: Usability
+    The camera is not a functional requirement because not every PCs are equipped by a webcam. The device has to offer the possibility to avoid the camera usage. 
+  </li>
+  <li>
+    2 - Environment’s illumination sensing. Area: usability
+    The possibility to change the illumination conditions is too difficult to implement, because it is necessary to include a controller in a plant that already exists. So the sensing may be limited to send data used to display notifications (messages and acoustic signals) to advise a way to change it manually.  
+  </li>
+<ol>
+    
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
