@@ -21,14 +21,28 @@
         background-position: right top;
         background-color: #000000;
       }
-      li a {
-        display: block;
-      }
-      nav {
+      #navigation-bar {
         list-style-type: none;
         margin: 0;
         padding: 0;
-      }
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+        
+      li {
+            float: left;
+        }
+        
+      li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
     </style>
     <title>Study Station</title>
   </head>
@@ -45,7 +59,7 @@
             <!--img src = "images/Study_Station.jpg" class="img-rounded" align = "middle" style="width:80%;height:80%; z-index:-1"-->
             </h1>
           <h2 id="project_tagline">#AmI2016 #StSt</h2>
-          <h3> <a href="definitions.html"> Specs </a> </h3>
+          <h3> <a href="definitions.html"> Go to the Specs! </a> </h3>
           
             <!--section id="downloads">
               <a class="zip_download_link" href="https://github.com/AmI-2016/StSt/zipball/master">Download this project as a .zip file</a>
@@ -58,13 +72,10 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h2>
-<nav id="navigation-bar">
-  <a href="#group-memebers">Group Members</a> |
-  <a href="/css/">CSS</a> |
-  <a href="/js/">JavaScript</a> |
-  <a href="/jquery/">jQuery</a>
-</nav>
-
+<ul id="navigation-bar">
+  <li> href="/index.html">The Vision</a></li>
+  <li><a href="/Definitions.html">Specs</a></li>
+</ul>
 <a id="group-members" class="anchor" href="#group-members" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Group Members</h2>
 
 <table>
