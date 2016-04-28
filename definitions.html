@@ -24,23 +24,24 @@
       }
       #navigation-bar {
         list-style-type: none;
-        margin: 5px;
-        padding: 5px;
-        width: 25%;
+        margin: 0;
+        padding: 0;
         background-color: #f1f1f1;
-        overflow: auto;
-        position: fixed;
+        overflow: hidden;
       }
       h3{
         color: #4294bd;
       }
       li a {
-            display: block;
-            color: #000;
-            padding: 8px 0 8px 16px;
-            font-size: 20px;
+          float: left;
+          display: block;
+          color: #000;
+          padding: 14px 16px;
+          font-size: 20px;
+          text-align: center;
         }
       li a:hover {
+          padding: 14px 16px;         
           background-color: #4294bd;
           color: white;
     }
@@ -72,6 +73,11 @@
       <section id="main_content" class="inner">
         <h2>
 
+<ul id="navigation-bar">
+  <li><a href="#purpose">Purpose and Scope</a></li>
+  <li><a href="#functional">Functional Requirements</a></li>
+  <li><a href="#non-functional">Non Functional Requirements</a></li>
+</ul>
 <h2>
 <a id="Purpose and Scope" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Purpose and Scope</h2>
 
@@ -80,7 +86,7 @@
 <p>The system has the following parts: a wearable device (composed by a set of tilt sensors that give informations about posture), a camera (which measures the distance between user and his PC), a light-sensor (that controls the environment brightness and computes some operations to fix it to avoid sight tiredness) and a Software (used as a Control Unit of the entire structure that shows all the data and suggests user to improve his working station through displayed messages). The PC is used to collect and show statistics.  </p>
 
 <h2>
-<a id="Definitions" class="anchor" href="#Definitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Definitions</h2>
+<a id="Definitions" class="anchor" href="#definitions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Definitions</h2>
 <h3>Glossary</h3>
 <li>Location: home or office</li>
 <li>Stimuli: the set of audio/message/vibration signals that are supposed to send data about user’s posture</li>
@@ -124,25 +130,25 @@
 <a id="Non-Funcitional-Requirements" class="anchor" href="#non-functional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Non Functional Requirements</h2>
 <ol>
   <li>
-    <p>1 - Using Camera. Area: Usability</p>
+    <p>Using Camera. Area: Usability</p>
     The camera is not a functional requirement because not every PCs are equipped by a webcam. The device has to offer the possibility to avoid the camera usage. 
     </p>
   </li>
   <li>
-    <p>2 - Environment’s illumination sensing. Area: usability
+    <p>Environment’s illumination sensing. Area: usability
     </p>
     <p>The possibility to change the illumination conditions is too difficult to implement, because it is necessary to include a controller in a plant that already exists. So the sensing may be limited to send data used to display notifications (messages and acoustic signals) to advise a way to change it manually.  
     </p>
   </li>
 <ol>
-    
+  <p></p>
     <!-- FOOTER  -->
-    <div style ="width:100%" id="footer_wrap" class="outer">
+    <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">Study Station maintained by <a href="https://github.com/AmI-2016">AmI-2016</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
+  
   </body>
 </html>
