@@ -113,49 +113,46 @@ communicate between each other.</li>
   <a id="Functional-Requirements" class="anchor" href="#functional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Functional Requirements
 </h2>
 <ol>
+LOG
+<li>The user must be able to log in/out the website. (4)</li>
+STATISTICS
+<li>The software must provide statistics about data received from sensors about
+shoulders inclination and environment brightness. (2)</li>
+<li>The website must show a report and a chronology related to all statistics collected during the study session. (3)</li>
+NOTIFICATIONS
 <li>
-  <p>Log.1 - create an account. Priority: 3</p>
-  <p>Creating an Account gives the possibility to the user to see statistics on the web page about the position and suggestions to change his habits in a better way. Account is personal, which means that each account has different data related to the user.
-  </p>
+  A vibration warns user to change posture every time it is wrong; a vibrator 
+  placed on the “StSt” device must generate the vibration. (1)</li>
+<li>
+  Sound signals and displayed messages which suggest user to modify the environment brightness are produced by the software. (2)
+</li>
+CONTROLLER
+<li>
+  The software must give the possibility to start and stop “StSt” device computation. (1)
 </li>
 <li>
-  <p>Log.2 - Synchronization between program and web. Priority: 3
-  </p>
-  <p>The synchronization starts through a signal (Wi-fi or Bluetooth) sent by the user’s PC. Every time the user logs in the web page, the program used to start the device sends data to the webpage. The device must be recognized by the program when active.
-  </p>
+  Data are visible in real-time on the software. (2)
 </li>
+SOFTWARE
 <li>
-  <p>WEB - Data visualization. Priority: 3
-  </p>
-  <p>The webpage offers to users to see all the data sent by sensors. The webpage may be composed by graphs (at first the report could be a list of data) which show all the statistics about position and environment illumination since service is started. Data are used also to display advices to improve the workstation.
-  </p>
-</li>
-<li>
-  <p>NOTIFS - Notifications. Priority: 2
-  </p>
-  <p>A program on PC will communicate with the device. It offers the possibility to switch on StSt and report in real time every information sent by sensors. The program also communicates with the website and send data to it to build a personal “history” and to show possible improvements.
-  </p>
-</li>
-<li>
-  <p>ACTING - Interacting with the user and the environment. Priority: 1
-  </p>
-  <p>A program on PC will communicate with the device. It offers the possibility to switch on StSt and report in real time every information sent by sensors. The program also communicates with the website and send data to it to build a personal “history” and to show possible improvements.
-  </p>
+  The software must have an user interface. (2)
 </li>
 </ol>
 <h2>
 <a id="Non-Funcitional-Requirements" class="anchor" href="#non-functional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Non Functional Requirements</h2>
 <ol>
   <li>
-    <p>Using Camera. Area: Usability</p>
-    The camera is not a functional requirement because not every PCs are equipped by a webcam. The device has to offer the possibility to avoid the camera usage. 
-    </p>
+    The system must be compatible with Windows. (Area: Portability)
+  </li>
+  <li>The system supports English language. (Area: Usability)
   </li>
   <li>
-    <p>Environment’s illumination sensing. Area: usability
-    </p>
-    <p>The possibility to change the illumination conditions is too difficult to implement, because it is necessary to include a controller in a plant that already exists. So the sensing may be limited to send data used to display notifications (messages and acoustic signals) to advise a way to change it manually.  
-    </p>
+    The “StSt” device needs to be connected to PC through USB and so it is necessary that software must run 
+    during all session time. (Area: Reliability)
+  </li>
+  <li>
+    “StSt” device must be worn correctly by the user to work in the right way: sensors must be fixed, so it is necessary to 
+    implement a close-fitting wearable device. (Area: Implementation)
   </li>
 <ol>
 </section>
