@@ -1,0 +1,161 @@
+ 
+<!doctype html>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>StSt</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="images/logo3.png" alt="">
+		</a>
+		<ul id="navigation">
+			<li class="selected">
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="vision.html">the vision</a>
+			</li>
+			<li>
+				<a href="ami.html">ami</a>
+			</li>
+			<li>
+				<a href="specs.html">the specs</a>
+			</li>
+			<li>
+				<a href="about.html">about us</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id = body>
+	<h1 id=h1 style="margin-bottom:10px"><span>Project Specification </span></h1>
+	</div>
+	<div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">The Specs</h1>
+        <p class="lead blog-description">Purpose and Scope, Glossary, Requirements and Technical specs</p>
+      </div>
+
+      <div class="row" style="margin-bottom: 40px">
+
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post" id="purpose">
+
+			<h2 class="blog-post-title">Purpose and Scope</h2>
+            <blockquote>
+              <p>The aim of the project is to improve the working terminal of the user thanks to devices which
+			  correct wrong posture of the body and give the possibility to regulate correctly room’s brightness.</p>
+            </blockquote>
+            The system is composed by the following parts:
+            <ul>
+              <li>A wearable device with a set of tilt sensors that give informations about posture.</li>
+              <li>A light-sensor that controls the environment brightness and computes some operations
+                  to fix it in order to avoid sight tiredness.</li>
+              <li>Software: Program that controls all data received to the “StSt” device.
+                  It is independent to the website but they communicate between each other.</li>
+              <li>A website that shows all the data and suggests user how to improve
+                  his working terminal (this function can be realized also by the software).
+			</ul>
+          </div>
+
+          <div class="blog-post" id="definitions">
+			<h2 class="blog-post-title">Definitions </h2>
+			<h3>Glossary</h3>
+            <dl class="dl-horizontal">
+                <dt>Wearable device</dt>
+                <dd>It is a T-shirt worn by the user during the study session.
+				Some accelerometers and a vibrating device are placed on it.</dd>
+                <dt>“StSt” device</dt>
+                <dd>It is the union of the wearable device and the light sensor.</dd>
+                <dt>Location</dt>
+                <dd>the personal working terminal: at home, in the office or in any room that can be personalized.</dd>
+                <dt>Website</dt>
+                <dd> Website of “StudyStation”: used to show all the results to the user</dd>
+                <dt>Software</dt>
+                <dd>Program that controls all data received to the “StSt” device. It is independent to the website but they communicate between each other</dd>
+                <dt>User Interface</dt>
+                <dd> Graphic interface of the software that allows user
+                  to interact with hardware parts of “StSt” device.</dd>
+            </dl>
+
+		    <h3>Actors</h3>
+			<dl class="dl-horizontal">
+                <dt>Target user</dt><dd> user who is approaching to study or work on their working terminal
+                    using “StudyStation”</dd>
+                <dt>Administrator</dt><dd>SW user that accesses software or website to execute the following
+                    actions: log in, start the study session, close the study session, get results
+                    of the data, log out.</dd>
+            </dl>
+          </div>
+
+          <div class="blog-post" id = "func">
+            <h2 class="blog-post-title">Functional Requirements</h2>
+            <ol>
+                <li><em>Notifications</em> - A vibration warns user to change posture every time
+                    it is wrong; a vibrator placed on the “StSt” device must generate the
+                    vibration. (1)</li>
+                <li><em>Controller</em> - The software must give the possibility to start and stop
+                    “StSt” device computation. (1)</li>
+                <li><em>Controller</em> - Data are visible in real-time on the software. (2)</li>
+                <li><em>Software</em> - The software must have an user interface. (2)</li>
+                <li><em>Notifications</em> - Sound signals and displayed messages which suggest user
+                    to modify the environment brightness are produced by the software. (2)</li>
+                <li><em>Statistics</em> - The software must provide statistics about data received from
+                    sensors about shoulders inclination and environment brightness. (3)</li>
+                <li><em>Statistics</em> - The website must show a report and a chronology related to
+                    all statistics collected during the study session. (3)</li>
+                <li><em>Log</em> - The user must be able to log in/out the website (the website must be able to
+                    collect and retrieve data from more than one user). (4)
+            </ol>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post" id = "non-func">
+            <h2 class="blog-post-title">Non Functional Requirements</h2>
+            <ol>
+                <li><em>Portability</em> - The system must be compatible with Windows.</li>
+                <li><em>Usability</em> - The system supports English language.</li>
+                <li><em>Reliability</em> - “StSt” device needs to be connected to PC through USB and so it
+                    is necessary that software must run during all session time.</li>
+                <li><em>Implementation</em> -“StSt” device must be worn correctly by the user to work in the right way: sensors must
+                    be fixed, so it is necessary to implement a close-fitting wearable device.</li>
+            </ol>
+          </div><!-- /.blog-post -->
+
+        </div>
+		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module">
+            <h3>Specs</h3>
+            <ol class="list-unstyled">
+              <li><a href="#purpose">Purpose and Scope</a></li>
+              <li><a href="#definitions">Definitions</a></li>
+              <li><a href="#func">Functional Requirements</a></li>
+              <li><a href="#non-func">Non Functional Requirements</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h3>Links</h3>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/AmI-2016/StSt">GitHub</a></li>
+              <li><a href="https://www.facebook.com/groups/polito.ami/">Facebook</a></li>
+            </ol>
+          </div>
+        </div>
+	</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2023 by StSt. All rights reserved.</p>
+		</div>
+	</div>
+	
+</body>
+</html>
