@@ -55,25 +55,23 @@
               <p>The aim of the project is to improve the working terminal of the user thanks to devices which
 			  correct wrong posture of the body and give the possibility to regulate correctly room’s brightness.</p>
             </blockquote>
-            The system is composed by the following parts:
-            <ul>
-              <li>A wearable device with a set of tilt sensors that give informations about posture.</li>
-              <li>A light-sensor that controls the environment brightness and computes some operations
-                  to fix it in order to avoid sight tiredness.</li>
-              <li>A software used as data control unit of the entire structure.</li>
-              <li>A website that shows all the data and suggests user how to improve
-                  his working terminal (this function can be realized also by the software).
-			</ul>
-          </div>
-
-          <div class="blog-post" id = "Hardware Architecture">
-            <h2 class="blog-post-title">Hardware Architecture</h2>
-            <img src = "images/Hardware%20Arch.JPG">
-          </div>
-
-          <div class="blog-post" id = "Software Architecture">
-            <h2 class="blog-post-title">Software Architecture</h2>
-            <img src = "images/Software%20Arch.JPG">
+            <div class="row">
+                <div class="col-sm-5">
+                The system is composed by the following parts:
+                <ul>
+                  <li>A wearable device with a set of accelerometers that get informations about posture and a vibrator.
+                  The latter is activated by the system to alert the user of a wrong posture.</li>
+                  <li>A light-sensor that sense the environment brightness.</li>
+                  <li>A computer used as data control unit of the entire structure. It is used by the user
+                  to start the system and it's able to show the data collected of the current session. </li>
+                  <li>A website that shows all the statistics of the previous sessions and suggests user how to improve
+                      his working terminal.</li>
+                </ul>
+                </div>
+                <div class="col-sm-7">
+                    <img src="images/Deliverable_3rd_components.png" style="width: 120%">
+                </div>
+            </div>
           </div>
 
           <div class="blog-post" id="definitions">
@@ -88,11 +86,11 @@
                 <dt>Location</dt>
                 <dd>The personal working terminal: at home, in the office or in any room that can be personalized.</dd>
                 <dt>Website</dt>
-                <dd> Website of “Study Station”: used to show all the results to the user.</dd>
+                <dd>Website of “Study Station”: used to show all the results to the user.</dd>
                 <dt>Software</dt>
                 <dd>Program that controls all data received to the “StSt” device. It is independent to the website but they communicate between each other.</dd>
                 <dt>User Interface</dt>
-                <dd> Graphic interface of the software that allows user
+                <dd>Graphic interface of the software that allows user
                   to interact with hardware parts of “StSt” device.</dd>
             </dl>
 
@@ -115,13 +113,13 @@
                 <li><em>Controller</em> - The software must give the possibility to start and stop
                     “StSt” device computation. (1)</li>
                 <li><em>Controller</em> - Data are visible in real-time on the software. (2)</li>
-                <li><em>Software</em> - The software must have an user interface. (2)</li>
+                <li><em>Software</em> - The software must have a user interface. (2)</li>
                 <li><em>Notifications</em> - Sound signals and displayed messages which suggest user
                     to modify the environment brightness are produced by the software. (2)</li>
                 <li><em>Statistics</em> - The software must provide statistics about data received from
-                    sensors about shoulders inclination and environment brightness. (3)</li>
+                    sensors about shoulders inclination and environment brightness of the current study session. (3)</li>
                 <li><em>Statistics</em> - The website must show a report and a chronology related to
-                    all statistics collected during the study session. (3)</li>
+                    all statistics collected during the previous study sessions. (3)</li>
                 <li><em>Log</em> - The user must be able to log in/out the website (the website must be able to
                     collect and retrieve data from more than one user). (4)
             </ol>
@@ -138,8 +136,16 @@
                     be fixed, so it is necessary to implement a close-fitting wearable device.</li>
             </ol>
           </div><!-- /.blog-post -->
+          <div class="blog-post" id = "Hardware Architecture"  >
+            <h2 class="blog-post-title">Hardware Architecture</h2>
+            <img src = "images/Hardware%20Arch.JPG" style="width: 120%">
+          </div>
 
-        <div class="blog-post" id = "Hardware components">
+          <div class="blog-post" id = "Software Architecture">
+            <h2 class="blog-post-title">Software Architecture</h2>
+            <img src = "images/Software%20Arch.JPG" style="width: 120%">
+          </div>
+          <div class="blog-post" id = "Hardware components">
             <h2 class="blog-post-title">Hardware components</h2>
             <ul>
                 <li>Arduino UNO</li>
@@ -147,26 +153,26 @@
                 <li>2 accelerometers: Adafruit 10 dof</li>
                 <li>Vibrator</li>
             </ul>
-        </div>
-        <div class="blog-post" id = "Software components">
+          </div>
+          <div class="blog-post" id = "Software components">
             <h2 class="blog-post-title">Software components</h2>
              <ul>
                 <li>Visual Basic</li>
                 <li>Arduino Software</li>
             </ul>
+          </div>
         </div>
 
-        </div>
-		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module">
             <h3>Specs</h3>
             <ol class="list-unstyled">
               <li><a href="#purpose">Purpose and Scope</a></li>
-              <li><a href="#Hardware Architecture">Hardware Architecture</a></li>
-              <li><a href="#Software Architecture">Software Architecture</a></li>
               <li><a href="#definitions">Definitions</a></li>
               <li><a href="#func">Functional Requirements</a></li>
               <li><a href="#non-func">Non Functional Requirements</a></li>
+              <li><a href="#Hardware Architecture">Hardware Architecture</a></li>
+              <li><a href="#Software Architecture">Software Architecture</a></li>
               <li><a href="#Hardware components">Hardware components</a></li>
               <li><a href="#Software components">Software components</a></li>
             </ol>
