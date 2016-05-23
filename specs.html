@@ -46,8 +46,8 @@
         <div class="col-sm-8 blog-main">
 
             <div class="blog-header">
-            <h1 class="blog-title">The Specs</h1>
-            <p class="lead blog-description">Purpose and Scope, Glossary, Requirements and Technical Specifications.</p>
+            <h1 class="blog-title">Summary:</h1>
+            <p class="lead blog-description">Purpose and Scope, Definitions, Requirements and Technical Specifications.</p>
           </div>
 
           <div class="blog-post" id="purpose">
@@ -63,7 +63,11 @@
                   <li><strong>A wearable device </strong>with a set of accelerometers that get informations about posture and a vibrator.
                   The latter is activated by the system to alert the user of a wrong posture.</li>
                   <li><strong>A light-sensor </strong>that sense the environment brightness.</li>
+<<<<<<< HEAD
                   <li><strong>A PC</strong>used as data control unit of the entire structure. It is used by the user
+=======
+                  <li><strong>A PC </strong>used as data control unit of the entire structure. It is used by the user
+>>>>>>> origin/gh-pages
                   to start the system and it's able to show the data collected of the current session. </li>
                   <li><strong>A website </strong>that shows all the statistics of the previous sessions and suggests user how to improve
                       his working terminal.</li>
@@ -93,6 +97,7 @@
                 <dt>User Interface</dt>
                 <dd>Graphic interface that shows the data about the current session. Furthermore it
                 allows the user to start and stop the system</dd>
+
             </dl>
 
 		    <h3>Actors</h3>
@@ -107,7 +112,7 @@
 
           <div class="blog-post" id = "func">
             <h2 class="blog-post-title">Functional Requirements</h2>
-            <ol>
+            <ul>
                 <li><em>Notifications.1</em> - A vibration warns user to change posture every time
                     it is wrong; a vibrator placed on the “StSt” device must generate the
                     vibration. (Priority: 1)</li>
@@ -119,24 +124,25 @@
                 <li><em>Statistics.1</em> - The software must provide statistics about data received from
                     sensors about shoulders inclination and environment brightness of the current study
                     session. (Priority: 3)</li>
+                    sensors about shoulders inclination and environment brightness of the current study session. (Priority: 3)</li>
                 <li><em>Statistics.2</em> - The website must show a report and a chronology related to
                     all statistics collected during the previous study sessions. (Priority: 3)</li>
                 <li><em>Software</em> - The software must have a user interface. (Priority: 2)</li>
                 <li><em>Log</em> - The user must be able to log in/out the website (the website must be able to
                     collect and retrieve data from more than one user). (Priority: 4)
-            </ol>
+            </ul>
           </div><!-- /.blog-post -->
 
           <div class="blog-post" id = "non-func">
             <h2 class="blog-post-title">Non Functional Requirements</h2>
-            <ol>
+            <ul>
                 <li><em>Portability</em> - The system must be compatible with Windows.</li>
                 <li><em>Usability</em> - The system supports English language.</li>
                 <li><em>Reliability</em> - “StSt” device needs to be connected to PC through USB and so it
                     is necessary that software must run during all session time.</li>
                 <li><em>Implementation</em> -“StSt” device must be worn correctly by the user to work in the right way: sensors must
                     be fixed, so it is necessary to implement a close-fitting wearable device.</li>
-            </ol>
+            </ul>
           </div><!-- /.blog-post -->
           <div class="blog-post" id = "Hardware Architecture"  >
             <h2 class="blog-post-title">Hardware Architecture</h2>
