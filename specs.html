@@ -63,7 +63,7 @@
                   <li><strong>A wearable device </strong>with a set of accelerometers that get informations about posture and a vibrator.
                   The latter is activated by the system to alert the user of a wrong posture.</li>
                   <li><strong>A light-sensor </strong>that sense the environment brightness.</li>
-                  <li><strong>A computer </strong>used as data control unit of the entire structure. It is used by the user
+                  <li><strong>A PC</strong>used as data control unit of the entire structure. It is used by the user
                   to start the system and it's able to show the data collected of the current session. </li>
                   <li><strong>A website </strong>that shows all the statistics of the previous sessions and suggests user how to improve
                       his working terminal.</li>
@@ -79,20 +79,20 @@
 			<h2 class="blog-post-title">Definitions </h2>
 			<h3>Glossary</h3>
             <dl class="dl-horizontal">
+                <dt>Location</dt>
+                <dd>The personal working terminal: at home, in the office or in any room that can be personalized.</dd>
                 <dt>Wearable device</dt>
                 <dd>It is a T-shirt worn by the user during the study session.
 				Some accelerometers and a vibrating device are placed on it.</dd>
                 <dt>“StSt” device</dt>
                 <dd>It is the union of the wearable device and the light sensor.</dd>
-                <dt>Location</dt>
-                <dd>The personal working terminal: at home, in the office or in any room that can be personalized.</dd>
                 <dt>Website</dt>
                 <dd>Website of “Study Station”: used to show all the results to the user.</dd>
-                <dt>Software</dt>
-                <dd>Program that controls all data received to the “StSt” device. It is independent to the website but they communicate between each other.</dd>
+                <dt>Computer Program</dt>
+                <dd>Program that controls all data received from the “StSt” device. It  website but they communicate between each other.</dd>
                 <dt>User Interface</dt>
-                <dd>Graphic interface of the software that allows user
-                  to interact with hardware parts of “StSt” device.</dd>
+                <dd>Graphic interface that shows the data about the current session. Furthermore it
+                allows the user to start and stop the system</dd>
             </dl>
 
 		    <h3>Actors</h3>
@@ -108,21 +108,22 @@
           <div class="blog-post" id = "func">
             <h2 class="blog-post-title">Functional Requirements</h2>
             <ol>
-                <li><em>Notifications</em> - A vibration warns user to change posture every time
+                <li><em>Notifications.1</em> - A vibration warns user to change posture every time
                     it is wrong; a vibrator placed on the “StSt” device must generate the
-                    vibration. (1)</li>
-                <li><em>Controller</em> - The software must give the possibility to start and stop
-                    “StSt” device computation. (1)</li>
-                <li><em>Controller</em> - Data are visible in real-time on the software. (2)</li>
-                <li><em>Software</em> - The software must have a user interface. (2)</li>
-                <li><em>Notifications</em> - Sound signals and displayed messages which suggest user
-                    to modify the environment brightness are produced by the software. (2)</li>
-                <li><em>Statistics</em> - The software must provide statistics about data received from
-                    sensors about shoulders inclination and environment brightness of the current study session. (3)</li>
-                <li><em>Statistics</em> - The website must show a report and a chronology related to
-                    all statistics collected during the previous study sessions. (3)</li>
+                    vibration. (Priority: 1)</li>
+                <li><em>Notifications.2</em> - Sound signals and displayed messages which suggest user
+                    to modify the environment brightness are produced by the software. (Priority: 2)</li>
+                <li><em>Controller.1</em> - The software must give the possibility to start and stop
+                    “StSt” device computation. (Priority: 1)</li>
+                <li><em>Controller.2</em> - Data are visible in real-time on the software. (Priority: 2)</li>
+                <li><em>Statistics.1</em> - The software must provide statistics about data received from
+                    sensors about shoulders inclination and environment brightness of the current study
+                    session. (Priority: 3)</li>
+                <li><em>Statistics.2</em> - The website must show a report and a chronology related to
+                    all statistics collected during the previous study sessions. (Priority: 3)</li>
+                <li><em>Software</em> - The software must have a user interface. (Priority: 2)</li>
                 <li><em>Log</em> - The user must be able to log in/out the website (the website must be able to
-                    collect and retrieve data from more than one user). (4)
+                    collect and retrieve data from more than one user). (Priority: 4)
             </ol>
           </div><!-- /.blog-post -->
 
@@ -139,12 +140,33 @@
           </div><!-- /.blog-post -->
           <div class="blog-post" id = "Hardware Architecture"  >
             <h2 class="blog-post-title">Hardware Architecture</h2>
-            <img src = "images/Hardware%20Arch.JPG" style="width: 130%">
+            <strong>Computational Nodes:</strong>
+            <ul>
+                <li>Computer: data storage and data elaboration point</li>
+                <li>Micro controller: data elaboration point</li>
+                <li>Server: data storage and data elaboration point </li>
+            </ul>
+            <strong>Sensors:</strong>
+            <ul>
+                <li>Accelerometers: placed on the wearable devices</li>
+                <li>Light Sensor: placed on the computer case</li>
+            </ul>
+            <strong>Actuators:</strong>
+            <ul>
+                <li>Vibrator: placed on the wearable device</li>
+            </ul>
+            <strong>User intercace devices:</strong>
+            <ul>
+                <li>Wearable Device (T-shirt)</li>
+                <li>User Interface Software on the computer</li>
+                <li>Website</li>
+            </ul>
+
           </div>
 
           <div class="blog-post" id = "Software Architecture">
             <h2 class="blog-post-title">Software Architecture</h2>
-            <img src = "images/Software%20Arch.JPG" style="width: 130%">
+            <img src = "images/Software%20Arch.JPG" style="width: 130%; margin-top: 20px; margin-bottom: 20px">
           </div>
           <div class="blog-post" id = "Hardware components">
             <h2 class="blog-post-title">Hardware components</h2>
@@ -158,8 +180,8 @@
           <div class="blog-post" id = "Software components">
             <h2 class="blog-post-title">Software components</h2>
              <ul>
-                <li>Visual Basic</li>
-                <li>Arduino Software</li>
+                <li>Visual Basic Library: NuGet</li>
+                <li>Arduino Libraries: Adafruit_10DOF-master, Adafruit_TSL2561-master</li>
             </ul>
           </div>
         </div>
