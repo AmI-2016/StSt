@@ -2,10 +2,10 @@
 The Study Station Project
 Presentation:
 	
-	"Study Station" is a system thought as a wearable device that avoids health issues
-	caused by wrong postures maintained over time: our system may prevent it. 
-	Benefits interest all users that want to keep the body relaxed even after long periods of sitting. 
-	People who already have those kinds of habit and problems may get a useful help from our devices!
+	  "Study Station" is a system thought as a wearable device that avoids health issues
+	  caused by wrong postures maintained over time: our system may prevent it. 
+	  Benefits interest all users that want to keep the body relaxed even after long periods of sitting. 
+	  People who already have those kinds of habit and problems may get a useful help from our devices!
 		
 Structure:
 
