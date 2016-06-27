@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StSt - Login</title>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static',filename ='css/style2.css') }}>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename ='css/mobile.css')}}" media="screen and (max-width : 568px)">
+    <link rel="stylesheet" href={{ url_for('static',filename ='bootstrap-3.3.6-dist/css/bootstrap.min.css')}}>
+    <script type="text/javascript" src={{ url_for('static',filename ="js/mobile.js")}}></script>
+</head>
+
+<body>
+<div id="header" style="padding-bottom: 0">
+		<a href="../index.html" class="logo">
+			<img src="{{ url_for('static',filename ='images/Study-Station-logo-versione-finale.jpg')}}" alt="StudyStation">
+		</a>
+</div>
+<div class="container" style="width:500px">
+    <form action="{{ url_for('redirecting') }}" method="post">
+        <h2 class="form-signin-heading">Please log in</h2>
+        <div>
+            <label for="username">
+                <input style = "width: 470px; height: 40px" name="username" class="form-control" placeholder="Username" required autofocus >
+            </label>
+        </div>
+        <div>
+            <label for="inputPassword">
+                <input style = "width: 470px; height: 40px" type="password" name="Password" class="form-control" placeholder="Password" required autofocus>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <input type = submit class="btn btn-lg btn-primary btn-block" style="background-image: linear-gradient(to bottom,#5bc0de 0,#0ba39c 100%)" value = "Log in">
+    </form>
+
+{#    <form action="{{ url_for('redirecting') }}" method="post">
+        <p>
+            <label>Enter name: <input type="text" name="username"></label>
+            <input type="submit" value="Enter">
+        </p>
+    </form>#}
+</div> <!-- /container -->
+</body>
+</html>
