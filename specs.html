@@ -30,6 +30,9 @@
 			<li class="selected">
 				<a href="specs.html">specs</a>
 			</li>
+            <li>
+            <a href="multimedia.html">multimedia</a>
+            </li>
 			<li>
 				<a href="about.html">about us</a>
 			</li>
@@ -47,7 +50,7 @@
         <div class="col-sm-8 blog-main">
 
             <div class="blog-header">
-            <h1 class="blog-title">Summary:</h1>
+            <h1 class="blog-title">Summary</h1>
             <p class="lead blog-description">Purpose and Scope, Definitions, Requirements and Technical Specifications.</p>
           </div>
 
@@ -55,16 +58,16 @@
 			<h2 class="blog-post-title">Purpose and Scope</h2>
             <blockquote>
               <p>The aim of the project is to improve the working terminal of the user thanks to devices which
-			  correct wrong posture of the body and give the possibility to regulate correctly room’s brightness.</p>
+			  correct wrong postures of the body and give the possibility to regulate correctly the room’s brightness.</p>
             </blockquote>
                 The system is composed by the following parts:
                 <ul>
-                  <li><strong>A wearable device </strong>with a set of accelerometers that get informations about posture and a vibrator.
+                  <li><strong>A wearable device </strong>with a set of accelerometers that get information about posture and a vibrator.
                   The latter is activated by the system to alert the user of a wrong posture.</li>
-                  <li><strong>A light-sensor </strong>that sense the environment brightness.</li>
-                  <li><strong>A PC</strong> used as data control unit of the entire structure. It is used by the user
-                  to start the system and it's able to show the data collected of the current session. </li>
-                  <li><strong>A website </strong>that shows all the statistics of the previous sessions and suggests user how to improve
+                  <li><strong>A light-sensor </strong>that senses the environment brightness.</li>
+                  <li><strong>A PC</strong> used as a data control unit of the entire structure. It is used by the user
+                  to start the system and it's able to show the data collected during the current session. </li>
+                  <li><strong>A website </strong>that shows all the statistics of the previous sessions and suggests the user how to improve
                       his working terminal.</li>
                 </ul>
           </div>
@@ -82,11 +85,11 @@
                     Some accelerometers and a vibrating device are placed on it.</dd>
                     <dt>“StSt” device</dt>
                     <dd>It is the union of the wearable device and the light sensor.</dd>
-                    <dt>Website</dt>
-                    <dd>Website of “Study Station”: used to show all the results to the user.</dd>
                     <dt>Computer Program</dt>
                     <dd>Program that controls all data received from the “StSt” device. It communicates with a server where data are stored.
                     In this way, data can be accessed from the server.</dd>
+                    <dt>Website</dt>
+                    <dd>Website of “Study Station”: used to show all the results to the user. It retrieves all data from the server</dd>
                     <dt>User Interface</dt>
                     <dd>Graphic interface that shows the data about the current session. Furthermore, it
                     allows the user to start and stop the system.</dd>
@@ -95,9 +98,9 @@
 
                 <h3>Actors</h3>
                 <dl class="dl-horizontal">
-                    <dt>Target user</dt><dd>User who is approaching to study or work on their working terminal
+                    <dt>Target user</dt><dd>A user who is approaching to study or work on his working terminal
                         using “Study Station”.</dd>
-                    <dt>Administrator</dt><dd>User that accesses software or website to execute the following
+                    <dt>Administrator</dt><dd>A user that accesses software or website to execute the following
                         actions: log in, start the study session, close the study session, get results
                         of the data, log out.</dd>
                 </dl>
@@ -113,11 +116,11 @@
           <div class="blog-post" id = "func">
             <h2 class="blog-post-title">Functional Requirements</h2>
             <ul>
-                <li><em>Notifications.1</em> - A vibration warns user to change posture every time
+                <li><em>Notifications.1</em> - A vibration warns the user to change posture every time
                     it is wrong; a vibrator placed on the “StSt” device must generate the
                     vibration. (Priority: 1)</li>
-                <li><em>Notifications.2</em> - Sound signals and displayed messages which suggest user
-                    to modify the environment brightness are produced by the computer program. (Priority: 2)</li>
+                <li><em>Notifications.2</em> - Sound signals and displayed messages suggest user
+                    to modify the environment brightness; they are produced by the computer program. (Priority: 2)</li>
                 <li><em>Controller.1</em> - The computer program must give the possibility to start and stop
                     “StSt” device computation. (Priority: 1)</li>
                 <li><em>Controller.2</em> - Data are visible in real-time on the computer program. (Priority: 2)</li>
@@ -138,7 +141,7 @@
                 <li><em>Portability</em> - The system must be compatible with Windows.</li>
                 <li><em>Usability</em> - The system supports English language.</li>
                 <li><em>Reliability</em> - “StSt” device needs to be connected to PC through USB and so it
-                    is necessary that software must run during all session time.</li>
+                    is necessary that the computer program runs during all the session.</li>
                 <li><em>Implementation</em> -“StSt” device must be worn correctly by the user to work in the right way: sensors must
                     be fixed, so it is necessary to implement a close-fitting wearable device or some kind of smart support.</li>
             </ul>
@@ -160,7 +163,7 @@
             <ul>
                 <li>Vibrator: placed on the wearable device</li>
             </ul>
-            <strong>User intercace devices:</strong>
+            <strong>User interface devices:</strong>
             <ul>
                 <li>Wearable Device (T-shirt)</li>
                 <li>User Interface Software on the computer</li>
