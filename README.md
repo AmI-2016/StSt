@@ -9,7 +9,8 @@ Presentation:
 		
 Structure:
 
-      Site Project: the code of the website that presents the Study Station
       StSt_Personal Page: the code of the website used by the users to retrieve the data collected in the previous sessions
       Visual Basic Program: The code of the computer program used to get the data from the arduino
       Arduino Program: the code of the program running on the arduino
+      Site Project: all the other files are part of the website that presents the Study Station here on GitHUb
+
