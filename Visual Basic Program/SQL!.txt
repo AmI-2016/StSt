@@ -1,0 +1,60 @@
+   Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Save Dialog Box
+        Dim f As New SaveFileDialog
+        Dim SQLconnect As New SQLite.SQLiteConnection()
+        f.Filter = "SQLite 3 (*.db3)|*.db3|All Files|"
+        f.ShowDialog()
+        If f.ShowDialog() = DialogResult.OK Then
+            'Save Dialog Box
+            FileName = f.FileName
+            TextBox6.Text = FileName
+            'Create Database
+
+            'Database Doesn't Exist so Created at Path
+            SQLconnect.ConnectionString = "Data Source=" & f.FileName & ";"
+            SQLconnect.Open()
+            SQLconnect.Close()
+
+        End If
+
+    End Sub
+	
+	#Region "SQL"
+    Public Sub Create_Table()
+
+        Dim SQLconnect As New SQLite.SQLiteConnection()
+        Dim SQLcommand As SQLiteCommand
+        SQLconnect.ConnectionString = "Data Source=" & FileName & ";"
+        SQLconnect.Open()
+        SQLcommand = SQLconnect.CreateCommand
+        'SQL query to Create Table
+        SQLcommand.CommandText = "CREATE TABLE StoredValues(id INTEGER PRIMARY KEY AUTOINCREMENT, Hours INTEGER, Minutes INTEGER, Seconds INTEGER, Ax1 REAL, Ay1 REAL, Az1 REAL, Ax2 REAL, Ay2 REAL, Az2 REAL, Light REAL);"
+        SQLcommand.ExecuteNonQuery()
+        SQLcommand.Dispose()
+        SQLconnect.Close()
+    End Sub
+
+    Public Sub Insert_Values(ByRef Ax1 As Double, ByRef Ay1 As Double, ByRef Az1 As Double, ByRef Ax2 As Double, ByRef Ay2 As Double, ByRef Az2 As Double, ByRef Light As Double)
+        'Dim f As New OpenFileDialog
+        'f.Filter = "SQLite 3 (*.db3)|*.db3|All Files|*.*"
+        'If f.ShowDialog() = DialogResult.OK The
+        Dim aTime As Array
+        aTime = Split(TimeOfDay, ":")
+        Dim SQLconnect As New SQLite.SQLiteConnection()
+        Dim SQLcommand As SQLiteCommand
+        SQLconnect.ConnectionString = "Data Source=" & FileName & ";"
+        SQLconnect.Open()
+        SQLcommand = SQLconnect.CreateCommand
+        'Insert Record into Foo
+        SQLcommand.CommandText = "INSERT INTO StoredValues (Hours,Minutes,Seconds,Ax1, Ay1, Az1, Ax2, Ay2, Az2, Light) VALUES (" + CStr(aTime(0)) + ", " + CStr(aTime(1)) + ", " + CStr(aTime(2)) + ", " + CStr(Ax1) + ", " + CStr(Ay1) + ", " + CStr(Az1) + ", " + CStr(Ax2) + ", " + CStr(Ay2) + ", " + CStr(Az2) + ", " + CStr(Light) + ")"
+
+        'Update Last Created Record in Foo
+        'SQLcommand.CommandText = "UPDATE StoredValues SET Ax1 = 0, description = 'New Description' WHERE id = last_insert_rowid()"
+        'Delete Last Created Record from Foo
+        'SQLcommand.CommandText = "DELETE FROM StoredValues WHERE id = last_insert_rowid()"
+        SQLcommand.ExecuteNonQuery()
+        SQLcommand.Dispose()
+        SQLconnect.Close()
+        'End If
+    End Sub
+#End Region

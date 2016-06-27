@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MiniComPort">
+</Property><Property Name="File di soluzione" Value="C:\Users\s203625\Desktop\VB\MiniComPort.sln">
+</Property><Property Name="File di opzioni utente" Value="C:\Users\s203625\Desktop\VB\MiniComPort.suo">
+</Property><Property Name="Date" Value="martedì 10 maggio 2016">
+</Property><Property Name="Time" Value="12:08">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MiniComPort.sln" Description="File salvato come C:\Users\s203625\Desktop\VB\Backup\MiniComPort.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MiniComPort.suo" Description="File salvato come C:\Users\s203625\Desktop\VB\Backup\MiniComPort.suo">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="MiniComPort.vbproj" Description="Backup del file di progetto completato con nome C:\Users\s203625\Desktop\VB\Backup\MiniComPort.vbproj">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="MiniComPort.vbproj.user" Description="Backup del file di progetto dell'utente completato con nome C:\Users\s203625\Desktop\VB\Backup\MiniComPort.vbproj.user">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="My Project\AssemblyInfo.vb" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="My Project\Application.Designer.vb" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="My Project\Resources.Designer.vb" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="My Project\Settings.Designer.vb" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="frmMain.designer.vb" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\frmMain.designer.vb">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="frmMain.vb" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\frmMain.vb">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="My Project\Application.myapp" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="My Project\Settings.settings" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="My Project\Resources.resx" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="frmMain.resx" Description="Backup del file completato con nome C:\Users\s203625\Desktop\VB\Backup\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="MiniComPort.vbproj" Description="Conversione progetto completata">
+</Event><Event ErrorLevel="3" Project="MiniComPort" Source="MiniComPort.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MiniComPort.sln" Description="Soluzione convertita correttamente">
+</Event><Event ErrorLevel="3" Project="" Source="MiniComPort.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MiniComPort" Source="MiniComPort.vbproj" Description="Analisi completa: aggiornamento non necessario per i file di progetto.">
+</Event></UpgradeLog>
